@@ -16,4 +16,6 @@ public class DataStore : MonoBehaviour
     public static float maxV = 70f;
 
     public static int sucessTime = 200;
+
+    public static int radius = 1000;
 }

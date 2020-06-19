@@ -19,6 +19,8 @@ public class Menu : MonoBehaviour
     public TMP_Text planetNum;
     public TMP_Text totalTest;
     public TMP_Text _successTime;
+
+    public TMP_Text radius;
      private void Awake()
     {
         succes.text = DataStore.sucess.ToString();
@@ -44,6 +46,7 @@ public class Menu : MonoBehaviour
         maxMass.text = DataStore.max.ToString();
         planetNum.text = DataStore.planetNum.ToString();
         _successTime.text = DataStore.sucessTime.ToString();
+        radius.text = DataStore.radius.ToString();
     }
     public void begin()
     {
@@ -116,6 +119,14 @@ public class Menu : MonoBehaviour
         if(text.text != "")
         {
             DataStore.sucessTime = int.Parse(text.text);
+        }
+    }
+
+    public void rad(TMP_InputField text)
+    {
+        if(text.text != "")
+        {
+            DataStore.radius = int.Parse(text.text);
         }
     }
 

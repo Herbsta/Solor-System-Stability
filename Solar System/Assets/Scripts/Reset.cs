@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour
 {
+
+    private void Start()
+    {
+        GetComponent<SphereCollider>().radius = DataStore.radius;
+    }
+
     private void OnTriggerExit(Collider other)
     {
         Manager.saveCam();

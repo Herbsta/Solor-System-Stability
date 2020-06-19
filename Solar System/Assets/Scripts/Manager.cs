@@ -52,6 +52,11 @@ public class Manager : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            SceneManager.LoadScene(1);
+        }
+
 
         if (Input.GetButtonDown("Jump"))
         {
