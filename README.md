@@ -18,11 +18,17 @@ Controls:
 the variables on the menu screen are self explanatory, except for number of tests. This simply refers to how many iterations of the simulation you want to undergo.
 
 Inside the simulation, the controls are as follows:
-          Lshift: pauses the scene and allows you to edit the time and enable / disable trails
-          Rmouse: reenters the scene from the paused state and locks the mouse.
-          Space: controls whether you want the simulation to regenerate after the time to call successful is passed. 
-                    nb: if the simulation reaches a fail criterion, the scene will still automatically switch
-          Backspace: skips to the next simulation, but counts the last one as a fail
-          esc: exits early, but still retains data and how many simulations were run.
+# Lshift: 
+pauses the scene and allows you to edit the time and enable / disable trails
+# Rmouse: 
+reenters the scene from the paused state and locks the mouse.
+# Space: 
+controls whether you want the simulation to regenerate after the time to call successful is passed. 
+          nb: if the simulation reaches a fail criterion, the scene will still automatically switch
+# Backspace: 
+skips to the next simulation, but counts the last one as a fail
+# esc: 
+exits early, but still retains data and how many simulations were run.
 
-          the time: this speeds up the simulation by up to a factor of 99x, note this can lead to graphical performance issues.
+# the time: 
+this speeds up the simulation by up to a factor of 99x, note this can lead to graphical performance issues.
