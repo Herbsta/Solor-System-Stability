@@ -10,7 +10,7 @@ All planets will always start with a velocity lower than its escape velocity. Th
 
 
 # Values:
-G is 1e17 times greater in this simulation so that the tests do not take ages.
+G is 1e17 times greater in this simulation so that the tests does not take ages.
 The stationary sun has mass 2e6 and the relative mass of the earth comapred to the sun is 5. 
 No planet can have a mass greater than the sun.
 
@@ -26,6 +26,7 @@ Pauses the scene and allows you to edit the time and enable / disable trails
 Reenters the scene from the paused state and locks the mouse.
 # Space: 
 Controls whether you want the simulation to regenerate after the time to call successful is passed. 
+
           NB: If the simulation reaches a fail criterion, the scene will still automatically switch
 # Backspace: 
 Skips to the next simulation, but counts the last one as a fail
@@ -38,15 +39,22 @@ This speeds up the simulation by upto a factor of 99x, note this can lead to gra
 
 # Maximise reliability:
 In order to maximise the reliablity of the test, the follow variables need to be set up:
+
 Radius of solar system: 1e5
+
 Time to call test as successful: as greater as possible, but from testing about 200+ returns more reliable data
 
 # Calculations
 The gravity is simulated using F = gMm / r^2 and this is applied to the objects consistantly with a fixed time interval.
+
 The escape Velocity uses the equation V = sqrt(2GM/r) and this is applied to the object as soon as the simulations start.
+
 The Sun will not move, as this can cause the entire solar system to drift, which could impede observing the system. 
 
+# Trying out
+I would recommend trying the max and min masses to be 5, the number of tests to be 100, the min and max Velocities to be 99% and the number of planets to be 5 to test the program.
 
+When you enable trails this simulation tends to look very appealing 
 
 
 
